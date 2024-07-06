@@ -10,7 +10,7 @@ app.use(express.json());
 app.use(cors());
 
 const mongoURI: string =
-  "mongodb+srv://fxndi90:MANAlow32@financetracker.ma7yt5q.mongodb.net/?retryWrites=true&w=majority&appName=financetracker";
+  "VITE_MONG";
 mongoose
   .connect(mongoURI)
   .then(() => console.log("CONNECTED TO MONGODB!"))
