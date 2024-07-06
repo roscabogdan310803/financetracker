@@ -1,0 +1,59 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #D6EFD8;
+  color: #333;
+}
+
+.app-container {
+  width: 99vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.navbar {
+  padding-right: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #D6EFD8;
+  width: 90%;
+  height: 60px;
+}
+.sign-in-container {
+  margin-top: 300px;
+}
+
+.sign-in-container button {
+  margin: 10px;
+  background-color: #1A5319;
+}
+
+.navbar a {
+  color: #1A5319;
+  text-decoration: none;
+  margin-right: 20px;
+  font-weight: bold;
+  transition: color 0.3s;
+  font-size: 25px;
+}
+
+.navbar a:hover {
+  color: #000;
+}
+
+.clerk-user-button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.clerk-user-button:hover {
+  color: #e0e0e0;
+}
+

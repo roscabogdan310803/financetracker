@@ -1,0 +1,95 @@
+.dashboard-container {
+  width: 80%;
+}
+
+h1,
+h2 {
+  color: #2c3e50;
+  text-align: center;
+}
+
+.form-container,
+.list-container {
+  margin-bottom: 20px;
+}
+
+.button {
+  background-color: #1A5319;
+  color: #D6EFD8;
+  border: none;
+  padding: 8px 15px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.button:hover {
+  background-color: #1A5319;
+}
+.button-delete {
+  background-color: #1A5319;
+  color: #D6EFD8;
+  border: none;
+  padding: 8px 15px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.button-delete:hover {
+  background-color: #1A5319;
+}
+
+
+.input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  background-color: transparent;
+  border: 1px solid #1A5319;
+  border-radius: 5px;
+  color: #1A5319;
+}
+
+
+label {
+  font-weight: 600;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.table-container {
+  margin: 20px;
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.table th,
+.table td {
+  padding: 12px 15px;
+  border: 1px solid #D6EFD8;
+  text-align: left;
+}
+
+.table th {
+  background-color: #1A5319;
+  color: #D6EFD8;
+  font-size: 16px;
+}
+
+.table tbody tr:nth-child(odd) {
+  background-color: #f2f2f2;
+}
+
+.table tbody tr:hover {
+  background-color: #e8f4f8;
+}
