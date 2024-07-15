@@ -9,7 +9,7 @@ dotenv.config();
 
 const app: Express = express();
 const port = process.env.PORT || 3001;
-const mongoURI = process.env.MONGODB_URI;
+const mongoURI = "mongodb+srv://ibacarim:MANAlow32@financetracker.tobrihe.mongodb.net/"
 
 app.use(express.json());
 app.use(cors());
