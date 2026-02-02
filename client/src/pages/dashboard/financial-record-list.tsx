@@ -133,26 +133,41 @@ export const FinancialRecordList = () => {
       columns,
       data: records,
     });
+
   return (
     <div className="table-container">
       <table {...getTableProps()} className="table">
         <thead>
-          {headerGroups.map((hg) => (
-            <tr {...hg.getHeaderGroupProps()}>
-              {hg.headers.map((column) => (
-                <th {...column.getHeaderProps()}> {column.render("Header")}</th>
-              ))}
-            </tr>
-          ))}
+          {headerGroups.map((hg) => {
+            const { key: headerGroupKey, ...headerGroupProps } = hg.getHeaderGroupProps();
+            return (
+              <tr key={headerGroupKey} {...headerGroupProps}>
+                {hg.headers.map((column) => {
+                  const { key: columnKey, ...columnProps } = column.getHeaderProps();
+                  return (
+                    <th key={columnKey} {...columnProps}>
+                      {column.render("Header")}
+                    </th>
+                  );
+                })}
+              </tr>
+            );
+          })}
         </thead>
         <tbody {...getTableBodyProps()}>
           {rows.map((row) => {
             prepareRow(row);
+            const { key: rowKey, ...rowProps } = row.getRowProps();
             return (
-              <tr {...row.getRowProps()}>
-                {row.cells.map((cell) => (
-                  <td {...cell.getCellProps()}> {cell.render("Cell")} </td>
-                ))}
+              <tr key={rowKey} {...rowProps}>
+                {row.cells.map((cell) => {
+                  const { key: cellKey, ...cellProps } = cell.getCellProps();
+                  return (
+                    <td key={cellKey} {...cellProps}>
+                      {cell.render("Cell")}
+                    </td>
+                  );
+                })}
               </tr>
             );
           })}
