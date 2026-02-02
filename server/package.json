@@ -4,10 +4,10 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "npx ts-node src/index.ts",
-    "build": "npm install",
-    "dev": "ts-node ./src/index.ts"
-  },
+  "build": "tsc",
+  "start": "node dist/index.js",
+  "dev": "ts-node src/index.ts"
+},
   "dependencies": {
     "@types/cors": "^2.8.17",
     "@types/express": "^4.17.25",
