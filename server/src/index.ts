@@ -1,7 +1,7 @@
 import express from "express";
 import cors from "cors";
 import dotenv from "dotenv";
-import recordsRoutes from "./routes/financial-records.js"; // Asigură-te că extensia .js este pusă dacă folosești "type": "module"
+import recordsRoutes from "./routes/financial-records"; // Asigură-te că extensia .js este pusă dacă folosești "type": "module"
 
 dotenv.config();
 
