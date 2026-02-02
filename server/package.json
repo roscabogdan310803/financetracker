@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "ts-node src/index.ts",
+    "start": "npx ts-node src/index.ts",
     "build": "npm install",
     "dev": "ts-node ./src/index.ts"
   },
