@@ -1,7 +1,14 @@
 import express from "express";
 import cors from "cors";
 import dotenv from "dotenv";
-import recordsRoutes from "./routes/financial-records"; // Asigură-te că extensia .js este pusă dacă folosești "type": "module"
+import recordsRoutes from "./routes/financial-records";
+import mongoose from "mongoose";
+
+const mongoURI = process.env.MONGODB_URI || "";
+
+mongoose.connect(mongoURI)
+  .then(() => console.log("Conectat la MongoDB!"))
+  .catch((err) => console.error("Eroare conectare MongoDB:", err));
 
 dotenv.config();
 
